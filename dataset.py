@@ -50,6 +50,10 @@ SAMPLE_POSTS = [
     "This is fine",
     "So excited for the weekend",
     "I am not happy about this",
+    "No cap, this is actually pretty good",
+    "Why does everything have to be so hard?",
+    "Lowkey stressed but highkey proud of myself",
+    "I absolutely love getting stuck in traffic",
 ]
 
 # Human labels for each post above.
@@ -67,17 +71,31 @@ TRUE_LABELS = [
     "negative",  # "I am not happy about this"
 ]
 
-# TODO: Add 5-10 more posts and labels.
-#
-# Requirements:
-#   - For every new post you add to SAMPLE_POSTS, you must add one
-#     matching label to TRUE_LABELS.
-#   - SAMPLE_POSTS and TRUE_LABELS must always have the same length.
-#   - Include a variety of language styles, such as:
-#       * Slang ("lowkey", "highkey", "no cap")
-#       * Emojis (":)", ":(", "🥲", "😂", "💀")
-#       * Sarcasm ("I absolutely love getting stuck in traffic")
-#       * Ambiguous or mixed feelings
+# Added 5-10 more posts and labels with variety in language styles
+
+SAMPLE_POSTS.append("No cap, this is actually pretty good")
+TRUE_LABELS.append("positive")
+
+SAMPLE_POSTS.append("Why does everything have to be so hard?")
+TRUE_LABELS.append("negative")
+
+SAMPLE_POSTS.append("Lowkey stressed but highkey proud of myself")
+TRUE_LABELS.append("mixed")
+
+SAMPLE_POSTS.append("I absolutely love getting stuck in traffic :)")
+TRUE_LABELS.append("negative")  # sarcasm
+
+SAMPLE_POSTS.append("Feeling 💀 but also 😂 vibes")
+TRUE_LABELS.append("mixed")
+
+SAMPLE_POSTS.append("This project is amazing, I hate that I love it")
+TRUE_LABELS.append("mixed")
+
+SAMPLE_POSTS.append("Just another day, nothing special :/")
+TRUE_LABELS.append("neutral")
+
+SAMPLE_POSTS.append("Can't believe how awesome that turned out!")
+TRUE_LABELS.append("positive")
 #
 # Tips:
 #   - Try to create some examples that are hard to label even for you.
